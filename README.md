@@ -41,14 +41,14 @@ The simulation model was validated through rigorous testing and factorial design
 - **The Hotspot Bottleneck:** Non-uniform access patterns (Lognormal) reduce usable system capacity by **50%–60%** compared to Uniform distribution due to localized table contention.
 - **Read Ratio Impact:** Read-heavy workloads ($p = 0.8$) significantly expand stable operating headroom.
 
-| Workload Configuration | Access Pattern | Stable Capacity ($W < 200	ext{ ms}$) | Stall Boundary ($W > 1000	ext{ ms}$) |
+| Workload Configuration | Access Pattern | Stable Capacity (W < 200 ms) | Stall Boundary (W > 1000 ms) |
 | :--- | :--- | :---: | :---: |
-| **Write-heavy ($p = 0.3$)** | Uniform | up to 2,500 users | $N > 4,000$ |
-| **Write-heavy ($p = 0.3$)** | Lognormal (Hotspots) | up to 1,200 users | $N \ge 1,500$ |
-| **Balanced ($p = 0.5$)** | Uniform | up to 3,000 users | Degraded at $N = 5,000$ |
-| **Balanced ($p = 0.5$)** | Lognormal (Hotspots) | up to 1,200 users | $N \ge 2,000$ |
-| **Read-heavy ($p = 0.8$)** | Uniform | **5,000+ users** | Stable ($W  pprox 154	ext{ ms}$) |
-| **Read-heavy ($p = 0.8$)** | Lognormal (Hotspots) | up to 2,500 users | $N \ge 4,000$ |
+| **Write-heavy (p = 0.3)** | Uniform | up to 2,500 users | N > 4,000 |
+| **Write-heavy (p = 0.3)** | Lognormal (Hotspots) | up to 1,200 users | N >= 1,500 |
+| **Balanced (p = 0.5)** | Uniform | up to 3,000 users | Degraded at N = 5,000 |
+| **Balanced (p = 0.5)** | Lognormal (Hotspots) | up to 1,200 users | N >= 2,000 |
+| **Read-heavy (p = 0.8)** | Uniform | **5,000+ users** | Stable (W ≈ 154 ms) |
+| **Read-heavy (p = 0.8)** | Lognormal (Hotspots) | up to 2,500 users | N >= 4,000 |
 
 ---
 
